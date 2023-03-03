@@ -7,5 +7,6 @@ C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/basic.
 C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/stream.dir
 C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/const.dir
 C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/static.dir
+C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/singleton.dir
 C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/edit_cache.dir
 C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/rebuild_cache.dir

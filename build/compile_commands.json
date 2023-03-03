@@ -48,5 +48,10 @@
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
   "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\static.dir\\aboutStatic.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\aboutStatic.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/aboutStatic.cpp"
+},
+{
+  "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\singleton.dir\\Singleton.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\Singleton.cpp\"",
+  "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/Singleton.cpp"
 }
 ]

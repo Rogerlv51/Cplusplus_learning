@@ -57,4 +57,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/stream.dir/DependInfo.cmake"
   "CMakeFiles/const.dir/DependInfo.cmake"
   "CMakeFiles/static.dir/DependInfo.cmake"
+  "CMakeFiles/singleton.dir/DependInfo.cmake"
   )

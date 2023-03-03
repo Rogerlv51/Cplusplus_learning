@@ -232,6 +232,34 @@ static/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/build
 .PHONY : static/fast
 
+#=============================================================================
+# Target rules for targets named singleton
+
+# Build rule for target.
+singleton: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 singleton
+.PHONY : singleton
+
+# fast build rule for target.
+singleton/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\singleton.dir\build.make CMakeFiles/singleton.dir/build
+.PHONY : singleton/fast
+
+# target to build an object file
+Singleton.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\singleton.dir\build.make CMakeFiles/singleton.dir/Singleton.obj
+.PHONY : Singleton.obj
+
+# target to preprocess a source file
+Singleton.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\singleton.dir\build.make CMakeFiles/singleton.dir/Singleton.i
+.PHONY : Singleton.i
+
+# target to generate assembly for a file
+Singleton.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\singleton.dir\build.make CMakeFiles/singleton.dir/Singleton.s
+.PHONY : Singleton.s
+
 # target to build an object file
 aboutConst.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/aboutConst.obj
@@ -394,11 +422,15 @@ help:
 	@echo ... const
 	@echo ... function
 	@echo ... linkedlist
+	@echo ... singleton
 	@echo ... static
 	@echo ... stl
 	@echo ... stream
 	@echo ... template
 	@echo ... zhizhen
+	@echo ... Singleton.obj
+	@echo ... Singleton.i
+	@echo ... Singleton.s
 	@echo ... aboutConst.obj
 	@echo ... aboutConst.i
 	@echo ... aboutConst.s
