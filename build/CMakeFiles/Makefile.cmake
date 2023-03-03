@@ -55,4 +55,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/zhizhen.dir/DependInfo.cmake"
   "CMakeFiles/basic.dir/DependInfo.cmake"
   "CMakeFiles/stream.dir/DependInfo.cmake"
+  "CMakeFiles/const.dir/DependInfo.cmake"
+  "CMakeFiles/static.dir/DependInfo.cmake"
   )

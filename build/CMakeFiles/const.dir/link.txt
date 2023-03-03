@@ -1,0 +1,3 @@
+D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\const.dir/objects.a
+D:\mingw64\bin\ar.exe qc CMakeFiles\const.dir/objects.a @CMakeFiles\const.dir\objects1.rsp
+D:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\const.dir/objects.a -Wl,--no-whole-archive -o const.exe -Wl,--out-implib,libconst.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\const.dir\linklibs.rsp

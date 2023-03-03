@@ -206,6 +206,62 @@ stream/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\stream.dir\build.make CMakeFiles/stream.dir/build
 .PHONY : stream/fast
 
+#=============================================================================
+# Target rules for targets named const
+
+# Build rule for target.
+const: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 const
+.PHONY : const
+
+# fast build rule for target.
+const/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/build
+.PHONY : const/fast
+
+#=============================================================================
+# Target rules for targets named static
+
+# Build rule for target.
+static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 static
+.PHONY : static
+
+# fast build rule for target.
+static/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/build
+.PHONY : static/fast
+
+# target to build an object file
+aboutConst.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/aboutConst.obj
+.PHONY : aboutConst.obj
+
+# target to preprocess a source file
+aboutConst.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/aboutConst.i
+.PHONY : aboutConst.i
+
+# target to generate assembly for a file
+aboutConst.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/aboutConst.s
+.PHONY : aboutConst.s
+
+# target to build an object file
+aboutStatic.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/aboutStatic.obj
+.PHONY : aboutStatic.obj
+
+# target to preprocess a source file
+aboutStatic.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/aboutStatic.i
+.PHONY : aboutStatic.i
+
+# target to generate assembly for a file
+aboutStatic.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/aboutStatic.s
+.PHONY : aboutStatic.s
+
 # target to build an object file
 basic_class.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\basic.dir\build.make CMakeFiles/basic.dir/basic_class.obj
@@ -335,12 +391,20 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... basic
+	@echo ... const
 	@echo ... function
 	@echo ... linkedlist
+	@echo ... static
 	@echo ... stl
 	@echo ... stream
 	@echo ... template
 	@echo ... zhizhen
+	@echo ... aboutConst.obj
+	@echo ... aboutConst.i
+	@echo ... aboutConst.s
+	@echo ... aboutStatic.obj
+	@echo ... aboutStatic.i
+	@echo ... aboutStatic.s
 	@echo ... basic_class.obj
 	@echo ... basic_class.i
 	@echo ... basic_class.s

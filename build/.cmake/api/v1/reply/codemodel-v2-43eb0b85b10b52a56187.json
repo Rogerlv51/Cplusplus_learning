@@ -17,7 +17,9 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7,
+						8
 					]
 				}
 			],
@@ -38,7 +40,9 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7,
+						8
 					]
 				}
 			],
@@ -53,6 +57,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "const::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-const-Debug-2c59e9f1d09825645c8a.json",
+					"name" : "const",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "function::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-function-Debug-4cce876cd8e0b93cedef.json",
 					"name" : "function",
@@ -63,6 +74,13 @@
 					"id" : "linkedlist::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-linkedlist-Debug-bbf0d16a336d4c78ac1f.json",
 					"name" : "linkedlist",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-static-Debug-c9210272c372f7737ec0.json",
+					"name" : "static",
 					"projectIndex" : 0
 				},
 				{

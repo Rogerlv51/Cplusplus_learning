@@ -38,5 +38,15 @@
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
   "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\stream.dir\\stream.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\stream.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/stream.cpp"
+},
+{
+  "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\const.dir\\aboutConst.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\aboutConst.cpp\"",
+  "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/aboutConst.cpp"
+},
+{
+  "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\static.dir\\aboutStatic.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\aboutStatic.cpp\"",
+  "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/aboutStatic.cpp"
 }
 ]

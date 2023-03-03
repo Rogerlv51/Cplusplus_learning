@@ -118,7 +118,29 @@
             "name": "基础类",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/basic.exe",    // 指定要调试运行的exe文件地址
+            "program": "${workspaceFolder}/build/basic.exe",    // 指定要调试运行的exe文件地址
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",            // cwd表示当前目录
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build"    // 对应task.json里面的label标签
+
+        },
+        {
+            "name": "Const",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/const.exe",    // 指定要调试运行的exe文件地址
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",            // cwd表示当前目录
@@ -141,6 +163,28 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/stream.exe",    // 指定要调试运行的exe文件地址
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",            // cwd表示当前目录
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build"    // 对应task.json里面的label标签
+
+        },
+        {
+            "name": "static",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/static.exe",    // 指定要调试运行的exe文件地址
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",            // cwd表示当前目录
