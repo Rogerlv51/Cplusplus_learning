@@ -1,0 +1,9 @@
+C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/stl.dir
+C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/linkedlist.dir
+C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/template.dir
+C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/function.dir
+C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/zhizhen.dir
+C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/basic.dir
+C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/stream.dir
+C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/edit_cache.dir
+C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build/CMakeFiles/rebuild_cache.dir

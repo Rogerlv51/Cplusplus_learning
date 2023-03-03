@@ -1,0 +1,110 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MYTEST",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "basic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-basic-Debug-e5a50ad0255db927e953.json",
+					"name" : "basic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "function::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-function-Debug-4cce876cd8e0b93cedef.json",
+					"name" : "function",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkedlist::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkedlist-Debug-bbf0d16a336d4c78ac1f.json",
+					"name" : "linkedlist",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stl-Debug-1b6073eaee35a1911942.json",
+					"name" : "stl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stream::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stream-Debug-1355110d6d4ea161699e.json",
+					"name" : "stream",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "template::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-template-Debug-9d783a3c92c4cd9fffb5.json",
+					"name" : "template",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zhizhen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zhizhen-Debug-1afac47b43d1ad734e08.json",
+					"name" : "zhizhen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
+		"source" : "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
