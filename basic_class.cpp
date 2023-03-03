@@ -16,6 +16,11 @@ public:
     */
    void set(int ii) { i=ii; cout << i <<endl;}   // 修改静态成员变量
    void get(){ cout << i << endl;}         // 访问静态成员变量
+
+   void justadd() const{   // const修饰的成员函数不能修改成员变量，只能访问，表示这个函数是只读模式
+        // age = 2;   此时修改成员变量会报错
+        cout << "这是一个只读函数" << endl;
+    }
 private:
     string name = " ";
     int age = 1;
@@ -81,6 +86,6 @@ int main(){
     B.justPrint("yes");
     Teacher& C = B;   // 创建一个引用指向对象B
     C.justPrint("wuwuwu");    // 可见成功调用子类多态函数 
-    
+    A.justadd();
     return 0;
 }
