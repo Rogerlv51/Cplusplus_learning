@@ -7,6 +7,7 @@
 
 */
 
+// 一般导入这三个头文件就够了
 #include <iostream>
 #include <iomanip>
 
@@ -25,20 +26,30 @@ using namespace std;
         ios::trunc	如果该文件已经存在，其内容将在打开文件之前被截断，即把文件长度设为 0。
 */
 
-
+// 使用流读写数据实际上是操作缓冲区，先写到一个buffer中，然后再输出到文件中
 int main(){
     // cout << setprecision(2) << 1000.243 << endl;    // 设置精度
     // cout << setw(20) << "OK!" << endl;      // 设置空格宽度
 
 
     // 详细读写方式见知乎https://zhuanlan.zhihu.com/p/352961501
+    // 创建类对象，将打开一个流，自动创建缓冲区
     fstream s;
-    s.open("abc.txt", ios::in);
-    char x[200], y[200], z[200];
-    while(s >> x >> y >> z){
-        cout << x <<" " << y <<" " << z <<endl;
+    s.open("abc", ios::out);   // 写数据
+    char buf[1024];   // 创建一个buffer暂存数据
+    for(int i = 0; i < 2; i++){
+        
+        cin.getline(buf, sizeof(buf));   // 从键盘读入数据，按行写入buffer中
+        s.write(buf, sizeof(buf));   // 写入文件
+    }
+    fstream o;
+    o.open("abc", ios::in);    // 只读方式打开
+    // 一直读到文件末尾
+    while(o.read(buf, sizeof(buf))){
+        cout << buf << endl;
     }
     
+    o.close();
     s.close();
     return 0;
 }
