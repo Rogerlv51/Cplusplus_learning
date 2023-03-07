@@ -38,6 +38,17 @@ void test(const int& a, const int& b){
 		cout << a + b << endl;
 }
 
+void foo(void (*func)(int),int j)
+{
+    func(j);
+}
+
+void printnumber(int j)
+{
+	cout<< "函数指针测试"<< endl;
+    cout<< "j="<<j<<" "<< endl;
+}
+
 int main() {
 	system("chcp 65001");
 	int re;
@@ -70,7 +81,16 @@ int main() {
 	cout << (num == nnum) << endl;
 	
 	test(2, 3);
+
+
+	// 注意函数本身是可以作为参数传递给另一个函数使用的，但这种情况下，函数的形参必须是函数指针类型
+	// 比如我们这里把printnumber函数作为参数传递给foo函数
+	
+	void (*func)(int i);   // 可以先定义一个函数指针，指向要传递的函数
+	func = printnumber;
+	foo(func, 100); // (1)
+	foo(printnumber, 100); // (2)  直接传递一个函数名，不需要定义函数指针
+	// 上述注释(1),(2)都可，但(1)要要注意的是初始化等号两边类型参数必须完全相同，否则不能用=号复制
 	return 0;
 }
-
 
