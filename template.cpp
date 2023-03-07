@@ -43,7 +43,8 @@ int main() {
 	float x = 3.5;
 	float y = 15.8;
 	cout << Max(x, y) << endl;
-
+	
+	// 类模板在初始化时必须显式地指定类型，不能像函数模板一样系统自动识别传入的类型
 	Person<string, int> person("zs", 25);
 	person.showPerson();
 	return 0;
