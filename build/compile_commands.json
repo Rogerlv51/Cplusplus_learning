@@ -1,57 +1,57 @@
 [
 {
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\stl.dir\\stl.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\stl.cpp\"",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -std=gnu++11 -o CMakeFiles\\stl.dir\\stl.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\stl.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/stl.cpp"
 },
 {
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\linkedlist.dir\\linkedlist.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\linkedlist.cpp\"",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -std=gnu++11 -o CMakeFiles\\linkedlist.dir\\linkedlist.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\linkedlist.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/linkedlist.cpp"
 },
 {
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\template.dir\\template.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\template.cpp\"",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -std=gnu++11 -o CMakeFiles\\template.dir\\template.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\template.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/template.cpp"
 },
 {
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\function.dir\\function.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\function.cpp\"",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -std=gnu++11 -o CMakeFiles\\function.dir\\function.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\function.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/function.cpp"
 },
 {
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\function.dir\\func.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\func.cpp\"",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -std=gnu++11 -o CMakeFiles\\fun.dir\\func.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\func.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/func.cpp"
 },
 {
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\zhizhen.dir\\zhizhen.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\zhizhen.cpp\"",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -std=gnu++11 -o CMakeFiles\\zhizhen.dir\\zhizhen.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\zhizhen.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/zhizhen.cpp"
 },
 {
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\basic.dir\\basic_class.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\basic_class.cpp\"",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -std=gnu++11 -o CMakeFiles\\basic.dir\\basic_class.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\basic_class.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/basic_class.cpp"
 },
 {
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\stream.dir\\stream.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\stream.cpp\"",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -std=gnu++11 -o CMakeFiles\\stream.dir\\stream.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\stream.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/stream.cpp"
 },
 {
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\const.dir\\aboutConst.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\aboutConst.cpp\"",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -std=gnu++11 -o CMakeFiles\\const.dir\\aboutConst.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\aboutConst.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/aboutConst.cpp"
 },
 {
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\static.dir\\aboutStatic.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\aboutStatic.cpp\"",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -std=gnu++11 -o CMakeFiles\\static.dir\\aboutStatic.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\aboutStatic.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/aboutStatic.cpp"
 },
 {
   "directory": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -o CMakeFiles\\singleton.dir\\Singleton.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\Singleton.cpp\"",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g   -Wall -g -std=gnu++11 -o CMakeFiles\\singleton.dir\\Singleton.obj -c \"C:\\Users\\Roger\\Desktop\\CodeSpace\\C++ learning\\vscode_c++\\Singleton.cpp\"",
   "file": "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/Singleton.cpp"
 }
 ]

@@ -168,6 +168,19 @@ function/fast:
 .PHONY : function/fast
 
 #=============================================================================
+# Target rules for targets named fun
+
+# Build rule for target.
+fun: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 fun
+.PHONY : fun
+
+# fast build rule for target.
+fun/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fun.dir\build.make CMakeFiles/fun.dir/build
+.PHONY : fun/fast
+
+#=============================================================================
 # Target rules for targets named zhizhen
 
 # Build rule for target.
@@ -307,17 +320,17 @@ basic_class.s:
 
 # target to build an object file
 func.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\function.dir\build.make CMakeFiles/function.dir/func.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fun.dir\build.make CMakeFiles/fun.dir/func.obj
 .PHONY : func.obj
 
 # target to preprocess a source file
 func.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\function.dir\build.make CMakeFiles/function.dir/func.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fun.dir\build.make CMakeFiles/fun.dir/func.i
 .PHONY : func.i
 
 # target to generate assembly for a file
 func.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\function.dir\build.make CMakeFiles/function.dir/func.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fun.dir\build.make CMakeFiles/fun.dir/func.s
 .PHONY : func.s
 
 # target to build an object file
@@ -420,6 +433,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... basic
 	@echo ... const
+	@echo ... fun
 	@echo ... function
 	@echo ... linkedlist
 	@echo ... singleton

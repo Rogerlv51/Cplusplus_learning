@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "stream.exe"
+			"path" : "basic.exe"
 		},
 		{
-			"path" : "stream.pdb"
+			"path" : "basic.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 12,
+				"line" : 13,
 				"parent" : 0
 			}
 		]
@@ -39,16 +39,27 @@
 			[
 				{
 					"fragment" : "-g   -Wall -g"
+				},
+				{
+					"fragment" : "-std=gnu++11"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
 			"sourceIndexes" : 
 			[
 				0
 			]
 		}
 	],
-	"id" : "stream::@6890427a1f51a3e7e1df",
+	"id" : "basic::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -68,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "stream",
-	"nameOnDisk" : "stream.exe",
+	"name" : "basic",
+	"nameOnDisk" : "basic.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "stream.cpp",
+			"path" : "basic_class.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

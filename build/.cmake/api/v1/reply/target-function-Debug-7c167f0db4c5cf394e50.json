@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "stl.exe"
+			"path" : "function.exe"
 		},
 		{
-			"path" : "stl.pdb"
+			"path" : "function.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 5,
+				"line" : 10,
 				"parent" : 0
 			}
 		]
@@ -39,16 +39,27 @@
 			[
 				{
 					"fragment" : "-g   -Wall -g"
+				},
+				{
+					"fragment" : "-std=gnu++11"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
 			"sourceIndexes" : 
 			[
 				0
 			]
 		}
 	],
-	"id" : "stl::@6890427a1f51a3e7e1df",
+	"id" : "function::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -68,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "stl",
-	"nameOnDisk" : "stl.exe",
+	"name" : "function",
+	"nameOnDisk" : "function.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "stl.cpp",
+			"path" : "function.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -52,6 +52,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/linkedlist.dir/DependInfo.cmake"
   "CMakeFiles/template.dir/DependInfo.cmake"
   "CMakeFiles/function.dir/DependInfo.cmake"
+  "CMakeFiles/fun.dir/DependInfo.cmake"
   "CMakeFiles/zhizhen.dir/DependInfo.cmake"
   "CMakeFiles/basic.dir/DependInfo.cmake"
   "CMakeFiles/stream.dir/DependInfo.cmake"

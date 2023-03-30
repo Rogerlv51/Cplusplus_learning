@@ -150,9 +150,6 @@ CMakeFiles/stream.dir/stream.obj: C:/Users/Roger/Desktop/CodeSpace/C++\ learning
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
-  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/quoted_string.h \
-  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream \
-  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/fstream \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
@@ -452,12 +449,6 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array:
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h:
-
-D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/quoted_string.h:
-
-D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream:
-
-D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h:
 

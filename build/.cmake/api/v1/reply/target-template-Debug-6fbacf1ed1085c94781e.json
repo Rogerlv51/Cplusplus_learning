@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "zhizhen.exe"
+			"path" : "template.exe"
 		},
 		{
-			"path" : "zhizhen.pdb"
+			"path" : "template.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -39,16 +39,27 @@
 			[
 				{
 					"fragment" : "-g   -Wall -g"
+				},
+				{
+					"fragment" : "-std=gnu++11"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
 			"sourceIndexes" : 
 			[
 				0
 			]
 		}
 	],
-	"id" : "zhizhen::@6890427a1f51a3e7e1df",
+	"id" : "template::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -68,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "zhizhen",
-	"nameOnDisk" : "zhizhen.exe",
+	"name" : "template",
+	"nameOnDisk" : "template.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "zhizhen.cpp",
+			"path" : "template.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
