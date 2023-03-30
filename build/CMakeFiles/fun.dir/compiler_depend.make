@@ -128,8 +128,7 @@ CMakeFiles/fun.dir/func.obj: C:/Users/Roger/Desktop/CodeSpace/C++\ learning/vsco
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
-  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
-  D:/mingw64/x86_64-w64-mingw32/include/assert.h
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc
 
 
 C:/Users/Roger/Desktop/CodeSpace/C++\ learning/vscode_c++/func.cpp:
@@ -361,8 +360,6 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc:
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h:
-
-D:/mingw64/x86_64-w64-mingw32/include/assert.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept:
 
