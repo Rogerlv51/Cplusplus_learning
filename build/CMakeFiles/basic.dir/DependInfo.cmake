@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/basic_class.cpp" "CMakeFiles/basic.dir/basic_class.obj" "gcc" "CMakeFiles/basic.dir/basic_class.obj.d"
+  "E:/CodeSpace/C++ learning/vscode_c++/basic_class.cpp" "CMakeFiles/basic.dir/basic_class.obj" "gcc" "CMakeFiles/basic.dir/basic_class.obj.d"
   )
 
 # Targets to which this target links.

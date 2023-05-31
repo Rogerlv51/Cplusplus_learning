@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/template.cpp" "CMakeFiles/template.dir/template.obj" "gcc" "CMakeFiles/template.dir/template.obj.d"
+  "E:/CodeSpace/C++ learning/vscode_c++/template.cpp" "CMakeFiles/template.dir/template.obj" "gcc" "CMakeFiles/template.dir/template.obj.d"
   )
 
 # Targets to which this target links.

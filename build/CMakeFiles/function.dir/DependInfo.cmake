@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Roger/Desktop/CodeSpace/C++ learning/vscode_c++/function.cpp" "CMakeFiles/function.dir/function.obj" "gcc" "CMakeFiles/function.dir/function.obj.d"
+  "E:/CodeSpace/C++ learning/vscode_c++/function.cpp" "CMakeFiles/function.dir/function.obj" "gcc" "CMakeFiles/function.dir/function.obj.d"
   )
 
 # Targets to which this target links.
