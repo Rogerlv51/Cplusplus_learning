@@ -52,9 +52,6 @@ void printnumber(int j)
 int main() {
 	system("chcp 65001");
 	int re;
-	int a = 10; int b = 20;
-	re = mysum(a, b);
-	cout << re << endl;
 
 	changeNumber(re);
 	cout << re << endl;      // 可以看到这样的函数调用赋值，并不会改变re的值，因为函数中变量只是临时的，调用完之后栈会释放

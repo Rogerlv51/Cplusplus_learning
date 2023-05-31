@@ -168,6 +168,19 @@ function/fast:
 .PHONY : function/fast
 
 #=============================================================================
+# Target rules for targets named static
+
+# Build rule for target.
+static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 static
+.PHONY : static
+
+# fast build rule for target.
+static/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/build
+.PHONY : static/fast
+
+#=============================================================================
 # Target rules for targets named fun
 
 # Build rule for target.
@@ -231,19 +244,6 @@ const: cmake_check_build_system
 const/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/build
 .PHONY : const/fast
-
-#=============================================================================
-# Target rules for targets named static
-
-# Build rule for target.
-static: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 static
-.PHONY : static
-
-# fast build rule for target.
-static/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/build
-.PHONY : static/fast
 
 #=============================================================================
 # Target rules for targets named singleton

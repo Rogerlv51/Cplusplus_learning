@@ -8,11 +8,12 @@ add_executable(linkedlist linkedlist.cpp)
 add_executable(template template.cpp)
 
 add_executable(function function.cpp)
+add_executable(static aboutStatic.cpp)
 add_executable(fun func.cpp)
 add_executable(zhizhen zhizhen.cpp)
 add_executable(basic basic_class.cpp)
 add_executable(stream stream.cpp)
 add_executable(const aboutConst.cpp)
-add_executable(static aboutStatic.cpp)
+
 add_executable(singleton Singleton.cpp)
-add_definitions("-Wall -g")     # 添加可调试编译选项
+# add_definitions("-Wall -g")     # 添加可调试编译选项

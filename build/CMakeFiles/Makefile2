@@ -66,12 +66,12 @@ all: CMakeFiles/stl.dir/all
 all: CMakeFiles/linkedlist.dir/all
 all: CMakeFiles/template.dir/all
 all: CMakeFiles/function.dir/all
+all: CMakeFiles/static.dir/all
 all: CMakeFiles/fun.dir/all
 all: CMakeFiles/zhizhen.dir/all
 all: CMakeFiles/basic.dir/all
 all: CMakeFiles/stream.dir/all
 all: CMakeFiles/const.dir/all
-all: CMakeFiles/static.dir/all
 all: CMakeFiles/singleton.dir/all
 .PHONY : all
 
@@ -84,12 +84,12 @@ clean: CMakeFiles/stl.dir/clean
 clean: CMakeFiles/linkedlist.dir/clean
 clean: CMakeFiles/template.dir/clean
 clean: CMakeFiles/function.dir/clean
+clean: CMakeFiles/static.dir/clean
 clean: CMakeFiles/fun.dir/clean
 clean: CMakeFiles/zhizhen.dir/clean
 clean: CMakeFiles/basic.dir/clean
 clean: CMakeFiles/stream.dir/clean
 clean: CMakeFiles/const.dir/clean
-clean: CMakeFiles/static.dir/clean
 clean: CMakeFiles/singleton.dir/clean
 .PHONY : clean
 
@@ -196,6 +196,32 @@ function: CMakeFiles/function.dir/rule
 CMakeFiles/function.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\function.dir\build.make CMakeFiles/function.dir/clean
 .PHONY : CMakeFiles/function.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/static.dir
+
+# All Build rule for target.
+CMakeFiles/static.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="E:\CodeSpace\C++ learning\vscode_c++\build\CMakeFiles" --progress-num=13,14 "Built target static"
+.PHONY : CMakeFiles/static.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\CodeSpace\C++ learning\vscode_c++\build\CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\CodeSpace\C++ learning\vscode_c++\build\CMakeFiles" 0
+.PHONY : CMakeFiles/static.dir/rule
+
+# Convenience name for target.
+static: CMakeFiles/static.dir/rule
+.PHONY : static
+
+# clean rule for target.
+CMakeFiles/static.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/clean
+.PHONY : CMakeFiles/static.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/fun.dir
@@ -326,32 +352,6 @@ const: CMakeFiles/const.dir/rule
 CMakeFiles/const.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/clean
 .PHONY : CMakeFiles/const.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/static.dir
-
-# All Build rule for target.
-CMakeFiles/static.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="E:\CodeSpace\C++ learning\vscode_c++\build\CMakeFiles" --progress-num=13,14 "Built target static"
-.PHONY : CMakeFiles/static.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\CodeSpace\C++ learning\vscode_c++\build\CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\CodeSpace\C++ learning\vscode_c++\build\CMakeFiles" 0
-.PHONY : CMakeFiles/static.dir/rule
-
-# Convenience name for target.
-static: CMakeFiles/static.dir/rule
-.PHONY : static
-
-# clean rule for target.
-CMakeFiles/static.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\static.dir\build.make CMakeFiles/static.dir/clean
-.PHONY : CMakeFiles/static.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/singleton.dir

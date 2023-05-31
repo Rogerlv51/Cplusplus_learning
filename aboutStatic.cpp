@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
-
 int main(){
     // 什么是static？static 是 C/C++ 中很常用的修饰符，它被用来控制变量的存储方式和可见性。
     
@@ -25,5 +23,10 @@ int main(){
     cout << i << endl;
     i = 10;
     cout << i << endl;   // 可以看到
+
+    extern int y;   // extern声明使用作用域之外的全局变量，也可以是别的cpp文件中定义过的
+    cout << "extern y = " << y << endl;  // 10
     return 0;
 }
+
+int y = 10;
