@@ -1,3 +1,0 @@
-D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\fun.dir/objects.a
-D:\mingw64\bin\ar.exe qc CMakeFiles\fun.dir/objects.a @CMakeFiles\fun.dir\objects1.rsp
-D:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\fun.dir/objects.a -Wl,--no-whole-archive -o fun.exe -Wl,--out-implib,libfun.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\fun.dir\linklibs.rsp

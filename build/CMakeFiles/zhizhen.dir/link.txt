@@ -1,3 +1,0 @@
-D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\zhizhen.dir/objects.a
-D:\mingw64\bin\ar.exe qc CMakeFiles\zhizhen.dir/objects.a @CMakeFiles\zhizhen.dir\objects1.rsp
-D:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\zhizhen.dir/objects.a -Wl,--no-whole-archive -o zhizhen.exe -Wl,--out-implib,libzhizhen.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\zhizhen.dir\linklibs.rsp

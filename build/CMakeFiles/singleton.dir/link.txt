@@ -1,3 +1,0 @@
-D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\singleton.dir/objects.a
-D:\mingw64\bin\ar.exe qc CMakeFiles\singleton.dir/objects.a @CMakeFiles\singleton.dir\objects1.rsp
-D:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\singleton.dir/objects.a -Wl,--no-whole-archive -o singleton.exe -Wl,--out-implib,libsingleton.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\singleton.dir\linklibs.rsp
