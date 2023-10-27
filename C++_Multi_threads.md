@@ -78,3 +78,43 @@ C++11之前，C++语言没有对并发编程提供语言级别的支持，这使
   - 命名空间`this_thread`中提供了一个非常绅士的函数`yield()`，在线程中调用这个函数之后，处于`运行态`的线程会主动让出自己已经抢到的CPU时间片，最终变为`就绪态`，这样其它的线程就有更大的概率能够抢到CPU时间片了。<font color='red'>线程调用了yield()之后会主动放弃CPU资源，但是这个变为就绪态的线程会**马上参与到下一轮CPU的抢夺战中**，不排除它能继续抢到CPU时间片的情况，这是概率问题。</font>
 
 
+## call_once()函数
+
+  在某些特定情况下，某些函数只能在多线程环境下调用一次，比如：要初始化某个对象，而这个对象只能被初始化一次，就可以使用`std::call_once()`来保证函数在多线程环境下只能被调用一次。使用`call_once()`的时候，需要一个`once_flag`作为`call_once()`的传入参数
+  - flag：once_flag类型的对象，要保证这个对象能够被多个线程同时访问到
+  - f：回调函数，可以传递一个有名函数地址，也可以指定一个匿名函数
+  - args：作为实参传递给回调函数
+
+  ```c++
+  #include <iostream>
+  #include <thread>
+  #include <mutex>
+  using namespace std;
+
+  once_flag g_flag;
+  void do_once(int a, string b)
+  {
+      cout << "name: " << b << ", age: " << a << endl;
+  }
+
+  void do_something(int age, string name)
+  {
+      static int num = 1;
+      call_once(g_flag, do_once, 19, "luffy");
+      cout << "do_something() function num = " << num++ << endl;
+  }
+
+  int main()
+  {
+      thread t1(do_something, 20, "ace");
+      thread t2(do_something, 20, "sabo");
+      thread t3(do_something, 19, "luffy");
+      t1.join();
+      t2.join();
+      t3.join();
+
+      return 0;
+  }
+
+  ```
+
