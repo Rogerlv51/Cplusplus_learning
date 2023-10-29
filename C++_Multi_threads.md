@@ -322,3 +322,224 @@ int main()
   ```
   - 独占的互斥锁对象不能直接传递给`wait()`函数，需要通过模板类`unique_lock`进行二次处理，通过得到的对象仍然可以对独占的互斥锁对象做如下操作，使用起来更灵活。
     ![wait](imgs/1.png)
+  - 如果线程被该函数阻塞，这个线程会释放占有的互斥锁的所有权，当阻塞解除之后这个线程会重新得到互斥锁的所有权，继续向下执行
+  - wait_for()和wait_until()函数参考字面意思即可
+
+- 通知函数：
+  - `notify_one()`：唤醒一个被当前条件变量阻塞的线程
+  - `notify_all()`：唤醒全部被当前条件变量阻塞的线程
+
+- 生产者和消费者模型
+
+  ```c++
+  // 用条件变量来实现一个同步消息队列
+  #include <iostream>
+  #include <thread>
+  #include <mutex>
+  #include <list>
+  #include <functional>
+  #include <condition_variable>
+  using namespace std;
+
+  class SyncQueue
+  {
+  public:
+      SyncQueue(int maxSize) : m_maxSize(maxSize) {}
+      
+      void put(const int& x)
+      {
+          unique_lock<mutex> locker(m_mutex);
+          // 判断任务队列是不是已经满了
+          while (m_queue.size() == m_maxSize)
+          {
+              cout << "任务队列已满, 请耐心等待..." << endl;
+              // 阻塞线程
+              m_notFull.wait(locker);
+          }
+          // 将任务放入到任务队列中
+          m_queue.push_back(x);
+          cout << x << " 被生产" << endl; 
+          // 通知消费者去消费
+          m_notEmpty.notify_one();
+      }
+
+      int take()
+      {
+          unique_lock<mutex> locker(m_mutex);
+          while (m_queue.empty())
+          {
+              cout << "任务队列已空，请耐心等待。。。" << endl;
+              m_notEmpty.wait(locker);
+          }
+          // 从任务队列中取出任务(消费)
+          int x = m_queue.front();
+          m_queue.pop_front();
+          // 通知生产者去生产
+          m_notFull.notify_one();
+          cout << x << " 被消费" << endl;
+          return x;
+      }
+
+      bool empty()
+      {
+          lock_guard<mutex> locker(m_mutex);
+          return m_queue.empty();
+      }
+
+      bool full()
+      {
+          lock_guard<mutex> locker(m_mutex);
+          return m_queue.size() == m_maxSize;
+      }
+
+      int size()
+      {
+          lock_guard<mutex> locker(m_mutex);
+          return m_queue.size();
+      }
+
+  private:
+      list<int> m_queue;     // 存储队列数据
+      mutex m_mutex;         // 互斥锁
+      condition_variable m_notEmpty;   // 不为空的条件变量
+      condition_variable m_notFull;    // 没有满的条件变量
+      int m_maxSize;         // 任务队列的最大任务个数
+  };
+
+  int main()
+  {
+      SyncQueue taskQ(50);
+      auto produce = bind(&SyncQueue::put, &taskQ, placeholders::_1);
+      auto consume = bind(&SyncQueue::take, &taskQ);
+      thread t1[3];
+      thread t2[3];
+      for (int i = 0; i < 3; ++i)
+      {
+          t1[i] = thread(produce, i+100);
+          t2[i] = thread(consume);
+      }
+
+      for (int i = 0; i < 3; ++i)
+      {
+          t1[i].join();
+          t2[i].join();
+      }
+
+      return 0;
+  }
+  ```
+
+
+
+**2、condition_variable_any**
+
+`condition_variable_any`的成员函数也是分为两部分：<mark>线程等待（阻塞）函数 和线程通知（唤醒）函数</mark>，这些函数被定义于头文件 `<condition_variable>`
+
+- 等待函数
+
+  ```c++
+  // ①
+  template <class Lock> void wait (Lock& lck);
+  // ②
+  template <class Lock, class Predicate>
+  void wait (Lock& lck, Predicate pred);
+  函数①：调用该函数的线程直接被阻塞
+  函数②：该函数的第二个参数是一个判断条件，是一个返回值为布尔类型的函数
+    该参数可以传递一个有名函数的地址，也可以直接指定一个匿名函数
+    表达式返回false当前线程被阻塞，表达式返回true当前线程不会被阻塞，继续向下执行
+  可以直接传递给wait()函数的互斥锁类型有四种，分别是：std::mutex、std::timed_mutex、std::recursive_mutex、std::recursive_timed_mutex
+  ```
+
+- 生产者消费者模型（几乎和之前代码一样）
+
+  ```c++
+  #include <iostream>
+  #include <thread>
+  #include <mutex>
+  #include <list>
+  #include <functional>
+  #include <condition_variable>
+  using namespace std;
+
+  class SyncQueue
+  {
+  public:
+      SyncQueue(int maxSize) : m_maxSize(maxSize) {}
+
+      void put(const int& x)
+      {
+          lock_guard<mutex> locker(m_mutex);
+          // 根据条件阻塞线程
+          m_notFull.wait(m_mutex, [this]() {
+              return m_queue.size() != m_maxSize;
+          });
+          // 将任务放入到任务队列中
+          m_queue.push_back(x);
+          cout << x << " 被生产" << endl;
+          // 通知消费者去消费
+          m_notEmpty.notify_one();
+      }
+
+      int take()
+      {
+          lock_guard<mutex> locker(m_mutex);
+          m_notEmpty.wait(m_mutex, [this]() {
+              return !m_queue.empty();
+          });
+          // 从任务队列中取出任务(消费)
+          int x = m_queue.front();
+          m_queue.pop_front();
+          // 通知生产者去生产
+          m_notFull.notify_one();
+          cout << x << " 被消费" << endl;
+          return x;
+      }
+
+      bool empty()
+      {
+          lock_guard<mutex> locker(m_mutex);
+          return m_queue.empty();
+      }
+
+      bool full()
+      {
+          lock_guard<mutex> locker(m_mutex);
+          return m_queue.size() == m_maxSize;
+      }
+
+      int size()
+      {
+          lock_guard<mutex> locker(m_mutex);
+          return m_queue.size();
+      }
+
+  private:
+      list<int> m_queue;     // 存储队列数据
+      mutex m_mutex;         // 互斥锁
+      condition_variable_any m_notEmpty;   // 不为空的条件变量
+      condition_variable_any m_notFull;    // 没有满的条件变量
+      int m_maxSize;         // 任务队列的最大任务个数
+  };
+
+  int main()
+  {
+      SyncQueue taskQ(50);
+      auto produce = bind(&SyncQueue::put, &taskQ, placeholders::_1);
+      auto consume = bind(&SyncQueue::take, &taskQ);
+      thread t1[3];
+      thread t2[3];
+      for (int i = 0; i < 3; ++i)
+      {
+          t1[i] = thread(produce, i + 100);
+          t2[i] = thread(consume);
+      }
+
+      for (int i = 0; i < 3; ++i)
+      {
+          t1[i].join();
+          t2[i].join();
+      }
+
+      return 0;
+  }
+  ```
